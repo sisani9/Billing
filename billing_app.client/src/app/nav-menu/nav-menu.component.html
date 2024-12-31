@@ -1,43 +1,17 @@
-<header>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-      <div class="container">
-        <a class="navbar-brand" [routerLink]="['/']">Sisani</a>
-        <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                aria-label="Toggle navigation"
-                [attr.aria-expanded]="isExpanded"
-                (click)="toggle()">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
-             [ngClass]="{ show: isExpanded }">
-          <ul *ngIf='!isLoggedIn()' class="navbar-nav flex-grow">
-            <li class="nav-item"
-                [routerLinkActive]="['link-active']"
-                [routerLinkActiveOptions]="{ exact: true }">
-              <a class="nav-link text-dark" [routerLink]="['/signup']">Sign Up</a>
-            </li>
-  
-            <li class="nav-item"
-                [routerLinkActive]="['link-active']"
-                [routerLinkActiveOptions]="{ exact: true }">
-              <a class="nav-link text-dark" [routerLink]="['/signin']">Sign In</a>
-            </li>
-          </ul>
-  
-          <ul *ngIf='isLoggedIn()' class="navbar-nav flex-grow">
-            <li class="nav-item">
-              <a class="nav-link text-dark" (click)="logout()">Logout</a>
-            </li>
-  
-            <li class="nav-item">
-              <a class="nav-link text-dark" [routerLink]="['/profile']">Profile</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<nav>
+  <div class="list1">
+     <ul>
+         <li><a routerLink="/home">Home</a></li>
+         <li><a routerLink="/create-bill">Create Bill</a></li>
+     </ul>
+  </div>
+  <div class="list2">
+     <ul>
+     <li><a routerLink="/signin">SignIn</a></li>
+     <li><a routerLink="/signup">SignUp</a></li>
+ </ul>
+ </div>
+ </nav>
+ 
+ 
+ 

@@ -1,25 +1,41 @@
-form {
+nav{
   display: flex;
-  flex-direction: column;
-  width: 300px;
-  margin: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
-div {
-  margin-bottom: 10px;
+.list1{
+  border: 2px solid red;
+  margin-left: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.list2{
+  border: 2px solid red;
+}
+.list1 ul{
+  display: flex;
+  list-style: none;
+  margin: left 100px; ;
 
-label {
-  margin-bottom: 5px;
-}
-
-input {
-  padding: 8px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-}
+  }  
+  .list1 ul li{
+    margin-right: 10px;
+  }
+  .list1 ul li a{
+      text-decoration: none;
+      margin: 20px;
+  }
+.list2 ul{
+  display: flex;
+  list-style: none;
+  margin-left: 30px;
+ 
+  }  
+  .list2 ul li{
+    margin-right: 20px;
+  }
+  .list2 ul li a{
+      text-decoration: none;
+  }

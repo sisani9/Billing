@@ -10,6 +10,7 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { BillingCoreComponent } from './billing-core/billing-core.component';
 import { BillingIdentityComponent } from './billing-identity/billing-identity.component';
 import { SigninComponent } from './billing-identity/signin/signin.component';
+import { SignupComponent } from './billing-identity/signup/signup.component';
 // import { RegistrationComponent } from './billing-identity/registration/registration.component';
 
 @NgModule({
@@ -21,6 +22,8 @@ import { SigninComponent } from './billing-identity/signin/signin.component';
     BillingCoreComponent,
     BillingIdentityComponent,
     SigninComponent,
+    SignupComponent,
+    
   
     
 
