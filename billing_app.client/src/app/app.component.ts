@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { RouterLink } from '@angular/router';
@@ -10,7 +9,8 @@ import { RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: false,
+  standalone: true,
+  imports: [RouterOutlet, RouterLink],
   styleUrl: './app.component.css'
 })
 export class AppComponent  {

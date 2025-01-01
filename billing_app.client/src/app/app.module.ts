@@ -1,7 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -11,7 +11,9 @@ import { BillingCoreComponent } from './billing-core/billing-core.component';
 import { BillingIdentityComponent } from './billing-identity/billing-identity.component';
 import { SigninComponent } from './billing-identity/signin/signin.component';
 import { SignupComponent } from './billing-identity/signup/signup.component';
-// import { RegistrationComponent } from './billing-identity/registration/registration.component';
+import { InvoiceFormComponent } from './billing-core/invoice-form/invoice-form.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SignupComponent } from './billing-identity/signup/signup.component';
     BillingIdentityComponent,
     SigninComponent,
     SignupComponent,
+   
+  
     
   
     
@@ -31,9 +35,11 @@ import { SignupComponent } from './billing-identity/signup/signup.component';
   imports: [
     BrowserModule, HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
+    ReactiveFormsModule,
+    
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }
