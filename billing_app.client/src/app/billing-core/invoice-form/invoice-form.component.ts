@@ -32,7 +32,8 @@ interface Invoice {
 @Component({
   selector: 'app-invoice-form',
   templateUrl: './invoice-form.component.html',
-  styleUrls: ['./invoice-form.component.css']
+  styleUrls: ['./invoice-form.component.css'], 
+  standalone: false,
 })
 export class InvoiceFormComponent {
   invoice: Invoice = {
