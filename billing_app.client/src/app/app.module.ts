@@ -2,7 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -17,9 +17,10 @@ import { AppComponent } from './app.component';
 
 
 @NgModule({
-  declarations: [
-  
 
+
+  declarations: [
+    
     BillingCoreComponent,
     BillingIdentityComponent,
     SigninComponent,
@@ -27,15 +28,10 @@ import { AppComponent } from './app.component';
    
   ],
   imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,
-    FormsModule, 
-    ReactiveFormsModule,
-
-   
-    
+    BrowserModule
   ],
+  
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { ngDoBootstrap() { } }
