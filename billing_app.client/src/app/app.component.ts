@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [RouterOutlet, RouterLink, AppComponent, NavMenuComponent, RouterLinkActive, FooterComponent, HomeComponent],
+  imports: [RouterOutlet, NavMenuComponent, FooterComponent, HomeComponent],
   styleUrl: './app.component.css'
 })
 export class AppComponent  {
